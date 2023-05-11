@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  FeaturedItem.swift
 //  DesignCodeiOS15
 //
-//  Created by Alexander Sobolev on 4.5.23..
+//  Created by Alexander Sobolev on 11.5.23..
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct FeaturedItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Spacer()
@@ -38,8 +38,6 @@ struct ContentView: View {
         .padding(.vertical, 20)
         .frame(height: 350.0)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-//        .cornerRadius(30.0)
-//        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.5), radius: 10, x: 0, y: 10)
         .strokeStyle()
         .padding(.horizontal, 20)
@@ -57,8 +55,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FeaturedItem_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FeaturedItem()
     }
 }

@@ -42,14 +42,6 @@ extension AccountView {
                 .foregroundStyle(.blue, .blue.opacity(0.3))
                 .padding()
                 .background(Circle().fill(.ultraThinMaterial))
-//                .background(
-//                    Image(systemName: "hexagon")
-//                        .symbolVariant(.fill)
-//                        .foregroundColor(.blue)
-//                        .font(.system(size: 200))
-//                    HexagonView()
-//                        .offset(x: -50, y: -90)
-//            )
                 .background(
                     BlobView()
                         .offset(x: 200, y: 0)
@@ -71,16 +63,18 @@ extension AccountView {
     
     var menu: some View {
         Section {
-            NavigationLink(destination: ContentView()) {
+            NavigationLink {
+                HomeView()
+            } label: {
                 Label("Settings", systemImage: "gear")
             }
             NavigationLink {
-                ContentView()
+                HomeView()
             } label: {
                 Label("Billing", systemImage: "creditcard")
             }
             NavigationLink {
-                ContentView()
+                HomeView()
             } label: {
                 Label("Money", systemImage: "questionmark")
             }
