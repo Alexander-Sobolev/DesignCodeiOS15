@@ -11,6 +11,7 @@
 		B403A85F2A08F3DB0014C9F1 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403A85E2A08F3DB0014C9F1 /* BlobView.swift */; };
 		B479AC8D2A05617900C29E1B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479AC8C2A05617900C29E1B /* Styles.swift */; };
 		B479AC8F2A0574A500C29E1B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479AC8E2A0574A500C29E1B /* AccountView.swift */; };
+		B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */; };
 		B4A97E232A0941F300476A6C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A97E222A0941F300476A6C /* TabBar.swift */; };
 		B4A97E252A09513E00476A6C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A97E242A09513E00476A6C /* Tab.swift */; };
 		B4B1A5262A042A2E0072B18C /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1A5252A042A2E0072B18C /* DesignCodeiOS15App.swift */; };
@@ -27,6 +28,7 @@
 		B403A85E2A08F3DB0014C9F1 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		B479AC8C2A05617900C29E1B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B479AC8E2A0574A500C29E1B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		B4A97E222A0941F300476A6C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B4A97E242A09513E00476A6C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		B4B1A5222A042A2E0072B18C /* DesignCodeiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A97E242A09513E00476A6C /* Tab.swift */,
+				B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				B4B1A5282A042A2E0072B18C /* ContentView.swift in Sources */,
 				B4B1A5262A042A2E0072B18C /* DesignCodeiOS15App.swift in Sources */,
 				B4D93BBE2A0CDCE400A8CD70 /* FeaturedItem.swift in Sources */,
+				B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */,
 				B4A97E232A0941F300476A6C /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
