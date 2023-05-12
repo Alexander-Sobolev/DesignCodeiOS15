@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B403A85D2A0816180014C9F1 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403A85C2A0816180014C9F1 /* HexagonView.swift */; };
 		B403A85F2A08F3DB0014C9F1 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B403A85E2A08F3DB0014C9F1 /* BlobView.swift */; };
+		B406B43C2A0EAD9F005B8F89 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B406B43B2A0EAD9F005B8F89 /* AnimatableFontModifier.swift */; };
 		B479AC8D2A05617900C29E1B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479AC8C2A05617900C29E1B /* Styles.swift */; };
 		B479AC8F2A0574A500C29E1B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479AC8E2A0574A500C29E1B /* AccountView.swift */; };
 		B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		B403A85C2A0816180014C9F1 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		B403A85E2A08F3DB0014C9F1 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		B406B43B2A0EAD9F005B8F89 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		B479AC8C2A05617900C29E1B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B479AC8E2A0574A500C29E1B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B479AC8C2A05617900C29E1B /* Styles.swift */,
+				B406B43B2A0EAD9F005B8F89 /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				B4D93BBE2A0CDCE400A8CD70 /* FeaturedItem.swift in Sources */,
 				B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */,
 				B4A97E232A0941F300476A6C /* TabBar.swift in Sources */,
+				B406B43C2A0EAD9F005B8F89 /* AnimatableFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
