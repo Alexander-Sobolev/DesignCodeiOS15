@@ -19,22 +19,7 @@ struct CourseView: View {
             .ignoresSafeArea()
             .background(Color("Background"))
             
-            Button {
-                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                    show.toggle()
-                }
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.body.weight(.bold))
-                    .foregroundColor(.secondary)
-                    .padding(8)
-                    .background(.ultraThinMaterial, in: Circle())
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-            .padding(.trailing, 30)
-            .padding(.top, 60)
-            .ignoresSafeArea()
-
+           button
         }
     }
 }
@@ -47,6 +32,22 @@ struct CourseView_Previews: PreviewProvider {
 }
 
 extension CourseView {
+    var button: some View {
+        Button {
+            withAnimation(.closeCard) {
+                show.toggle()
+            }
+        } label: {
+            Image(systemName: "xmark")
+                .font(.body.weight(.bold))
+                .foregroundColor(.secondary)
+                .padding(8)
+                .background(.ultraThinMaterial, in: Circle())
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+        .padding(30)
+        .ignoresSafeArea()
+    }
     var cover: some View {
         VStack {
             Spacer()

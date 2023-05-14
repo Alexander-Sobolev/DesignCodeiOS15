@@ -27,6 +27,7 @@
 		B4D93BB72A0CD42800A8CD70 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D93BB62A0CD42800A8CD70 /* HomeView.swift */; };
 		B4D93BBE2A0CDCE400A8CD70 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D93BBD2A0CDCE400A8CD70 /* FeaturedItem.swift */; };
 		B4D93BC02A0CDEEF00A8CD70 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D93BBF2A0CDEEF00A8CD70 /* NavigationBar.swift */; };
+		B4DA3F682A1107D7009C004B /* Animations+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DA3F672A1107D7009C004B /* Animations+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		B4D93BB62A0CD42800A8CD70 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B4D93BBD2A0CDCE400A8CD70 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		B4D93BBF2A0CDEEF00A8CD70 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		B4DA3F672A1107D7009C004B /* Animations+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animations+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				B479AC8C2A05617900C29E1B /* Styles.swift */,
 				B406B43B2A0EAD9F005B8F89 /* AnimatableFontModifier.swift */,
 				B406B43F2A0EB923005B8F89 /* Modifiers.swift */,
+				B4DA3F672A1107D7009C004B /* Animations+Ext.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				B406B45F2A10E617005B8F89 /* CourseItem.swift in Sources */,
 				B406B4612A10E7B3005B8F89 /* CourseView.swift in Sources */,
 				B406B43E2A0EB3DF005B8F89 /* Course.swift in Sources */,
+				B4DA3F682A1107D7009C004B /* Animations+Ext.swift in Sources */,
 				B4B1A5262A042A2E0072B18C /* DesignCodeiOS15App.swift in Sources */,
 				B4D93BBE2A0CDCE400A8CD70 /* FeaturedItem.swift in Sources */,
 				B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */,
