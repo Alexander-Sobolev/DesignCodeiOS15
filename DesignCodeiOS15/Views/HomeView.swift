@@ -21,6 +21,11 @@ struct HomeView: View {
                 scrollDetection
                 
                 featured
+                Text("Courses".uppercased())
+                    .font(.footnote.weight(.semibold))
+                    .foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
                 
                 if !show {
                     CourseItem(namespace: namespace, show: $show)
