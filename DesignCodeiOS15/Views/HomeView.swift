@@ -39,7 +39,7 @@ struct HomeView: View {
                             .cornerRadius(30)
                             .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
                             .opacity(0.3)
-                        .padding(.horizontal, 30)
+                            .padding(.horizontal, 30)
                     }
                 }
             }
@@ -152,7 +152,7 @@ extension HomeView {
                     .zIndex(1)
                     .transition(.asymmetric(
                         insertion: .opacity.animation(.easeInOut(duration: 0.1)),
-                    removal:   .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                        removal:   .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
             }
         }
     }

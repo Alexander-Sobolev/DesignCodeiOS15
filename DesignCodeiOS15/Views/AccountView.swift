@@ -20,7 +20,7 @@ struct AccountView: View {
                 
                 links
             }
-            .listStyle(.sidebar)
+            .listStyle(.automatic)
             .navigationTitle("Account")
         }
     }
