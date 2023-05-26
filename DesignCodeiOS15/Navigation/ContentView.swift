@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model: Model
     @AppStorage("selTab") var selectedTab: Tab = .home
     
     var body: some View {
@@ -24,6 +25,7 @@ struct ContentView: View {
                 }
             
             TabBar()
+                .offset(y: model.showDetail ? 200 : 0)
         }
         .safeAreaInset(edge: .bottom) {
             Color.clear.frame(height: 44)
@@ -33,6 +35,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .preferredColorScheme(.dark)
+        }
+        .environmentObject(Model())
     }
 }

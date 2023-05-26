@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var model: Model
     @Namespace var namespace
     @State var hasScrolled   = false
     @State var show          = false
@@ -71,6 +72,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(Model())
     }
 }
 
@@ -138,6 +140,7 @@ extension HomeView {
                 .onTapGesture {
                     withAnimation(.openCard) {
                         show.toggle()
+                        model.showDetail.toggle()
                         showStatusBar = false
                         selectedID = course.id
                 }
