@@ -21,6 +21,7 @@
 		B499CADA2A0D1BDE00A175B9 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */; };
 		B4A97E232A0941F300476A6C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A97E222A0941F300476A6C /* TabBar.swift */; };
 		B4A97E252A09513E00476A6C /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A97E242A09513E00476A6C /* Tab.swift */; };
+		B4B100222A24E1970035C079 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B100212A24E1970035C079 /* SearchView.swift */; };
 		B4B1A5262A042A2E0072B18C /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1A5252A042A2E0072B18C /* DesignCodeiOS15App.swift */; };
 		B4B1A5282A042A2E0072B18C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B1A5272A042A2E0072B18C /* ContentView.swift */; };
 		B4B1A52A2A042A2F0072B18C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B1A5292A042A2F0072B18C /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		B499CAD92A0D1BDE00A175B9 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		B4A97E222A0941F300476A6C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B4A97E242A09513E00476A6C /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		B4B100212A24E1970035C079 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B4B1A5222A042A2E0072B18C /* DesignCodeiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B1A5252A042A2E0072B18C /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		B4B1A5272A042A2E0072B18C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B479AC8E2A0574A500C29E1B /* AccountView.swift */,
 				B406B45C2A102399005B8F89 /* MachedView.swift */,
 				B406B4602A10E7B3005B8F89 /* CourseView.swift */,
+				B4B100212A24E1970035C079 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				B403A85F2A08F3DB0014C9F1 /* BlobView.swift in Sources */,
 				B406B45D2A102399005B8F89 /* MachedView.swift in Sources */,
 				B4B1A5282A042A2E0072B18C /* ContentView.swift in Sources */,
+				B4B100222A24E1970035C079 /* SearchView.swift in Sources */,
 				B406B45F2A10E617005B8F89 /* CourseItem.swift in Sources */,
 				B406B4612A10E7B3005B8F89 /* CourseView.swift in Sources */,
 				B406B43E2A0EB3DF005B8F89 /* Course.swift in Sources */,
