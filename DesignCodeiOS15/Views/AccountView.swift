@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AccountView: View {
+    @Environment(\.dismiss) private var dismiss
     @State var isDeleted = false
     @State var isPinned  = false
     
@@ -22,6 +23,14 @@ struct AccountView: View {
             }
             .listStyle(.automatic)
             .navigationTitle("Account")
+            .toolbar {
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Done")
+                        .bold()
+                }
+            }
         }
     }
 }

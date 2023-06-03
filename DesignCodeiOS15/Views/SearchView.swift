@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
+    @Environment(\.dismiss) private var dismiss
     @Namespace var namespace
     @State var selectedCourse = courses[0]
     @State var showCourse     = false
@@ -15,12 +16,26 @@ struct SearchView: View {
     
     var body: some View {
         NavigationView {
-            List(0..<5) { item in
-                Text("Hello")
+            List {
+                ForEach(courses.filter { $0.title.contains(text) || text == "" }) { item in
+                    Text(item.title)
+                }
             }
-            .searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always), prompt: "SwiftUI, React UI Design")
+            .searchable(
+            text: $text,
+            placement: .navigationBarDrawer(displayMode: .always),
+            prompt: "SwiftUI, React UI Design"
+            )
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Done")
+                        .bold()
+                }
+            }
         }
     }
 }
