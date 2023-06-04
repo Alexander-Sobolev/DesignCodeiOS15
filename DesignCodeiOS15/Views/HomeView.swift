@@ -10,10 +10,14 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var model: Model
     @Namespace var namespace
-    @State var hasScrolled   = false
-    @State var show          = false
     @State var showStatusBar = true
-    @State var selectedID = UUID()
+    @State var selectedIndex = 0
+    @State var hasScrolled   = false
+    @State var showCourse    = false
+    @State var selectedID    = UUID()
+    @State var show          = false
+    
+    
     
     var body: some View {
         ZStack {
@@ -102,7 +106,7 @@ extension HomeView {
     
     var featured: some View {
         TabView {
-            ForEach(featuredCourses) { course in
+            ForEach(Array(featuredCourses.enumerated()), id: \.offset) { index, course in
                 GeometryReader { proxy in
                     FeaturedItem(course: course)
                         .frame(maxWidth: 500)
@@ -128,7 +132,11 @@ extension HomeView {
                                      axis: (x: 0, y: 1, z: 0), perspective: 1
                                 )
                                 .blur(radius: abs(proxy.frame(in: .global).minX) / 40)
-                    )
+                        )
+                        .onTapGesture {
+                            showCourse = true
+                            selectedIndex = index
+                    }
                 }
             }
         }
@@ -138,6 +146,9 @@ extension HomeView {
             Image("Blob 1")
                 .offset(x: 250, y: -100)
         )
+        .sheet(isPresented: $showCourse) {
+            CourseView(show: $showCourse, course: featuredCourses[selectedIndex], namespace: namespace)
+        }
     }
     
     var cards: some View {

@@ -11,6 +11,7 @@ struct SearchView: View {
     @Environment(\.dismiss) private var dismiss
     @Namespace var namespace
     @State var selectedCourse = courses[0]
+    @State var selectedIndex  = 0
     @State var showCourse     = false
     @State var text           = ""
     
@@ -61,6 +62,9 @@ struct SearchView: View {
                         .bold()
                 }
             }
+            .sheet(isPresented: $showCourse) {
+                CourseView(show: $showCourse, course: courses[selectedIndex], namespace: namespace)
+            }
         }
     }
 }
@@ -73,26 +77,35 @@ struct SearchView_Previews: PreviewProvider {
 
 extension SearchView {
     private var content: some View {
-        ForEach(courses.filter { $0.title.contains(text) || text == "" }) { item in
-            HStack(alignment: .top, spacing: 12) {
-                Image(item.image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 44, height: 44)
-                    .background(Color("Background"))
-                    .mask(Circle())
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(item.title)
-                        .bold()
-                    Text(item.text)
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .multilineTextAlignment(.leading)
+        ForEach(Array(courses.enumerated()), id: \.offset) { index, item in
+            if item.title.contains(text) || text == "" {
+                if index != 0 { Divider() }
+                Button {
+                    showCourse = true
+                    selectedIndex = index
+                } label: {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(item.image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 44, height: 44)
+                            .background(Color("Background"))
+                            .mask(Circle())
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(item.title)
+                                .bold()
+                                .foregroundColor(.primary)
+                            Text(item.text)
+                                .font(.footnote)
+                                .foregroundColor(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
+                        }
+                    }
+                    .padding(.vertical, 4)
+                    .listRowSeparator(.hidden)
                 }
             }
-            .padding(.vertical, 4)
-            .listRowSeparator(.hidden)
         }
     }
 }
